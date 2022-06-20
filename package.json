@@ -27,6 +27,7 @@
     "tar-simditor": "^3.0.5",
     "tar-simditor-markdown": "^1.2.3",
     "vue": "^2.6.11",
+    "vue-carousel-3d": "^1.0.1",
     "vue-count-to": "^1.0.13",
     "vue-cropper": "^0.5.8",
     "vue-echarts": "^6.0.3",

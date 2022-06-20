@@ -9,7 +9,12 @@ import '@/styles/index.less'
 import katex from "@/plugins/katex"
 import "echarts"
 import ECharts from 'vue-echarts'
+import Carousel3d from "vue-carousel-3d";
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 
+Vue.use(ElementUI);
+Vue.use(Carousel3d);
 Vue.use(VueRouter);
 Vue.use(iView);
 Vue.use(katex);
