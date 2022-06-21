@@ -1,5 +1,6 @@
 import request from "@/request";
 
+
 export const uploadAvatar = (fileName, file) => {
   var COS = require('cos-js-sdk-v5');
   var cos = new COS({
@@ -80,6 +81,15 @@ export const getUserInfo = (userName) => request({
 
 export const checkUserNameExists = (userName) => request({
   url: `/api/users/userName/${userName}/exists`,
+  method: 'GET',
+})
+
+export const sendEmailCode = (email)=>request({
+  url: `/api/users/sendMailCode`,
+  params: {
+    email: email
+   // encodeURI(email.val())
+  },
   method: 'GET',
 })
 
@@ -306,4 +316,9 @@ export const checkToken = (token) => request({
     token: token,
   },
   method: 'GET',
+})
+
+export const resetPassword = (email) => request({
+  url: `api/users/${email}/password/reset`,
+  method: 'PUT',
 })

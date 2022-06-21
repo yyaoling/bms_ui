@@ -15,6 +15,7 @@ import BorrowApplicationList from "@/pages/user/views/application/BorrowApplicat
 import RenewApplicationList from "@/pages/user/views/application/RenewApplicationList";
 import ReturnApplicationList from "@/pages/user/views/application/ReturnApplicationList";
 import RecordList from "@/pages/user/views/record/RecordList";
+import ApplyResetPassword from "@/pages/user/views/user/ApplyResetPassword"
 import Cookie from "js-cookie";
 
 const router = new VueRouter({
@@ -34,6 +35,11 @@ const router = new VueRouter({
       name: 'user-home',
       path: '/user-home/:userName',
       component: UserHome,
+    },
+    {
+      name: 'apply-reset-password',
+      path: '/apply-reset-password',
+      component: ApplyResetPassword
     },
     {
       path: '/setting',
